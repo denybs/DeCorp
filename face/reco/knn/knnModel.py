@@ -1,6 +1,7 @@
 """
 il faut que :
 -le dataset soit une liste des lignes de liste des colonnes (features) de taille (nLignes,mColones)
+-les targets soient dans une liste séparé 
 -les donnes de la classe inconnue doivent etre sous forme d'une liste contenant une ligne et les colonnes de taille (1,mColonnes) 
 """
 def calculDistance(firstElement, secondElement):#firstelElement est la liste de features du premier element et same for secondElement
