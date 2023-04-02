@@ -1,4 +1,3 @@
-import numpy as np
 """
 il faut que :
 -le dataset soit une liste des lignes de liste des colonnes (features) de taille (nLignes,mColones)
@@ -17,7 +16,10 @@ def determineClass(kNearest,labels):
     classes= []
     for i in classesIndex:
         classes.append(labels[i])
-    classesSansDuplique= np.unique(classes).tolist()
+    classesSansDuplique= []
+    for element in classes:
+        if element not in classesSansDuplique:
+            classesSansDuplique.append(element)
     classeOccur=[]
     for classe in classesSansDuplique:
         classeOccur.append(classes.count(classe))
